@@ -69,4 +69,15 @@ public class Newspaper {
     public int hashCode() {
         return Objects.hash(code);
     }
+
+    @Override
+    public String toString() {
+        return "Newspaper{" +
+                "gender='" + gender + '\'' +
+                ", editorial='" + editorial + '\'' +
+                ", code='" + code + '\'' +
+                ", yearPublication=" + yearPublication +
+                ", price=" + price +
+                '}';
+    }
 }
