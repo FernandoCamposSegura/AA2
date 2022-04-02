@@ -69,4 +69,15 @@ public class Magazine {
     public int hashCode() {
         return Objects.hash(code);
     }
+
+    @Override
+    public String toString() {
+        return "Magazine{" +
+                "gender='" + gender + '\'' +
+                ", code='" + code + '\'' +
+                ", yearPublication=" + yearPublication +
+                ", numPages=" + numPages +
+                ", price=" + price +
+                '}';
+    }
 }

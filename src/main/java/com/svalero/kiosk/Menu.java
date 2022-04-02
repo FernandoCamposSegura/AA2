@@ -23,61 +23,73 @@ public class Menu {
             System.out.println("1. Registrar un libro ");
             System.out.println("2. Registrar una revista ");
             System.out.println("3. Registrar un periódico ");
+            System.out.println("4. Ver libros ");
+            System.out.println("5. Ver revistas ");
+            System.out.println("6. Ver periódicos ");
             System.out.println("4. Salir ");
 
             System.out.println("Elige una opción del menú");
-            choice = scn.nextInt();
+            choice = Integer.parseInt(scn.nextLine());
 
             switch (choice) {
                 case 1:
                     System.out.println("Introduce el ISBN del libro: ");
-                    String ISBN = scn.next();
+                    String ISBN = scn.nextLine();
                     System.out.println("Introduce el título del libro: ");
-                    String title = scn.next();
+                    String title = scn.nextLine();
                     System.out.println("Introduce el autor del libro: ");
-                    String author = scn.next();
+                    String author = scn.nextLine();
                     System.out.println("Introduce el número de páginas: ");
-                    int numPages = scn.nextInt();
+                    int numPages = Integer.parseInt(scn.nextLine());
                     System.out.println("Introduce el precio: ");
-                    float price = scn.nextFloat();
+                    float price = Float.parseFloat(scn.nextLine());
 
                     books.add(new Book(title, author, ISBN, numPages, price));
                     break;
                 case 2:
                     System.out.println("Introduce el código de la revista: ");
-                    String code = scn.next();
+                    String code = scn.nextLine();
                     System.out.println("Introduce el género de la revista: ");
-                    String gender = scn.next();
+                    String gender = scn.nextLine();
                     System.out.println("Introduce el año publicación: ");
-                    int yearPublication = scn.nextInt();
+                    int yearPublication = Integer.parseInt(scn.nextLine());
                     System.out.println("Introduce el número de páginas: ");
-                    numPages = scn.nextInt();
+                    numPages = Integer.parseInt(scn.nextLine());
                     System.out.println("Introduce el precio: ");
-                    price = scn.nextFloat();
+                    price = Float.parseFloat(scn.nextLine());
 
                     magazines.add(new Magazine(gender, code, yearPublication, numPages, price));
                     break;
                 case 3:
                     System.out.println("Introduce el código del periódico: ");
-                    code = scn.next();
+                    code = scn.nextLine();
                     System.out.println("Introduce el género del periódico: ");
-                    gender = scn.next();
+                    gender = scn.nextLine();
                     System.out.println("Introduce la editorial del periódico: ");
-                    String editorial = scn.next();
+                    String editorial = scn.nextLine();
                     System.out.println("Introduce el año publicación: ");
-                    yearPublication = scn.nextInt();
+                    yearPublication = Integer.parseInt(scn.nextLine());
                     System.out.println("Introduce el precio: ");
-                    price = scn.nextFloat();
+                    price = Float.parseFloat(scn.nextLine());
 
                     newspapers.add(new Newspaper(gender, editorial, code, yearPublication, price));
                     break;
                 case 4:
+                    books.forEach((book) -> System.out.println(book));
+                    break;
+                case 5:
+                    magazines.forEach((magazine) -> System.out.println(magazine));
+                    break;
+                case 6:
+                    newspapers.forEach((newspaper) -> System.out.println(newspaper));
+                    break;
+                case 7:
                     break;
                 default:
                     System.out.println("Elige una opción entre las disponibles");
 
             }
-        } while(choice != 4);
+        } while(choice != 7);
 
     }
 
