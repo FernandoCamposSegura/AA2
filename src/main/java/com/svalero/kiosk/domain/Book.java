@@ -17,6 +17,10 @@ public class Book {
         this.price = price;
     }
 
+    public Book(String ISBN) {
+        this.ISBN = ISBN;
+    }
+
     public String getTitle() {
         return title;
     }
