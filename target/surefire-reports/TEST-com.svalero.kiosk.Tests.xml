@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.svalero.kiosk.Tests" time="0.021" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.svalero.kiosk.Tests" time="0.025" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.10\bin"/>
-    <property name="sun.java.command" value="C:\Users\campo\AppData\Local\Temp\surefire15569193677893875097\surefirebooter1490972357663536326.jar C:\Users\campo\AppData\Local\Temp\surefire15569193677893875097 2022-04-03T12-41-32_573-jvmRun1 surefire14306470862091539996tmp surefire_014132605062568830119tmp"/>
+    <property name="sun.java.command" value="C:\Users\campo\AppData\Local\Temp\surefire1842867179570575422\surefirebooter1593122285536112929.jar C:\Users\campo\AppData\Local\Temp\surefire1842867179570575422 2022-04-04T15-35-39_336-jvmRun1 surefire1968971411103289469tmp surefire_03729355707211557078tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\campo\IdeaProjects\FernandoCamposSegura_AA2\target\test-classes;C:\Users\campo\IdeaProjects\FernandoCamposSegura_AA2\target\classes;C:\Users\campo\.m2\repository\org\junit\platform\junit-platform-launcher\1.6.0\junit-platform-launcher-1.6.0.jar;C:\Users\campo\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\campo\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\campo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\campo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\campo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\campo\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\campo\AppData\Local\Temp\surefire15569193677893875097\surefirebooter1490972357663536326.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\campo\AppData\Local\Temp\surefire1842867179570575422\surefirebooter1593122285536112929.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.10+8-LTS-162"/>
@@ -61,8 +61,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="checkMagazineProperties" classname="com.svalero.kiosk.Tests" time="0.01"/>
-  <testcase name="BooksAreEquals" classname="com.svalero.kiosk.Tests" time="0.001"/>
-  <testcase name="checkNewspaperProperties" classname="com.svalero.kiosk.Tests" time="0.001"/>
+  <testcase name="checkMagazineProperties" classname="com.svalero.kiosk.Tests" time="0.012"/>
+  <testcase name="BooksAreEquals" classname="com.svalero.kiosk.Tests" time="0"/>
+  <testcase name="checkNewspaperProperties" classname="com.svalero.kiosk.Tests" time="0"/>
   <testcase name="checkBookProperties" classname="com.svalero.kiosk.Tests" time="0"/>
 </testsuite>

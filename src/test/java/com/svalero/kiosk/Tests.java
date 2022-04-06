@@ -34,7 +34,7 @@ public class Tests {
 
     @Test
     public void checkMagazineProperties() {
-        assertEquals("Coches", magazine.getGender());
+        assertEquals("Coches", magazine.getCategory());
         assertEquals("12dW", magazine.getCode());
         assertEquals(2021, magazine.getYearPublication());
         assertEquals(30, magazine.getNumPages());
@@ -43,7 +43,7 @@ public class Tests {
 
     @Test
     public void checkNewspaperProperties() {
-        assertEquals("Noticias", newspaper.getGender());
+        assertEquals("Noticias", newspaper.getCategory());
         assertEquals("El Pais", newspaper.getEditorial());
         assertEquals("12FD45", newspaper.getCode());
         assertEquals(2022, newspaper.getYearPublication());

@@ -50,7 +50,7 @@ public class Menu {
                     System.out.println("Introduce el código de la revista: ");
                     String code = scn.nextLine();
                     System.out.println("Introduce el género de la revista: ");
-                    String gender = scn.nextLine();
+                    String category = scn.nextLine();
                     System.out.println("Introduce el año publicación: ");
                     int yearPublication = Integer.parseInt(scn.nextLine());
                     System.out.println("Introduce el número de páginas: ");
@@ -58,13 +58,13 @@ public class Menu {
                     System.out.println("Introduce el precio: ");
                     price = Float.parseFloat(scn.nextLine());
 
-                    magazines.add(new Magazine(gender, code, yearPublication, numPages, price));
+                    magazines.add(new Magazine(category, code, yearPublication, numPages, price));
                     break;
                 case 3:
                     System.out.println("Introduce el código del periódico: ");
                     code = scn.nextLine();
                     System.out.println("Introduce el género del periódico: ");
-                    gender = scn.nextLine();
+                    category = scn.nextLine();
                     System.out.println("Introduce la editorial del periódico: ");
                     String editorial = scn.nextLine();
                     System.out.println("Introduce el año publicación: ");
@@ -72,7 +72,7 @@ public class Menu {
                     System.out.println("Introduce el precio: ");
                     price = Float.parseFloat(scn.nextLine());
 
-                    newspapers.add(new Newspaper(gender, editorial, code, yearPublication, price));
+                    newspapers.add(new Newspaper(category, editorial, code, yearPublication, price));
                     break;
                 case 4:
                     books.forEach((book) -> System.out.println(book));

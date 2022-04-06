@@ -3,26 +3,26 @@ package com.svalero.kiosk.domain;
 import java.util.Objects;
 
 public class Magazine {
-    private String gender;
+    private String category;
     private String code;
     private int yearPublication;
     private int numPages;
     private float price;
 
-    public Magazine(String gender, String code, int yearPublication, int numPages, float price) {
-        this.gender = gender;
+    public Magazine(String category, String code, int yearPublication, int numPages, float price) {
+        this.category = category;
         this.code = code;
         this.yearPublication = yearPublication;
         this.numPages = numPages;
         this.price = price;
     }
 
-    public String getGender() {
-        return gender;
+    public String getCategory() {
+        return category;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public String getCode() {
@@ -73,7 +73,7 @@ public class Magazine {
     @Override
     public String toString() {
         return "Magazine{" +
-                "gender='" + gender + '\'' +
+                "gender='" + category + '\'' +
                 ", code='" + code + '\'' +
                 ", yearPublication=" + yearPublication +
                 ", numPages=" + numPages +
